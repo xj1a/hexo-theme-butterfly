@@ -1,0 +1,26 @@
+/* 桌面端 */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* 平板端 */
+@media screen and (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+  .main-content {
+    width: 100%;
+  }
+}
+
+/* 移动端 */
+@media screen and (max-width: 768px) {
+  .post-content {
+    padding: 0 10px;
+  }
+  .post-title {
+    font-size: 1.3rem;
+  }
+}
