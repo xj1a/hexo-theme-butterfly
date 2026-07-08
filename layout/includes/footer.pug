@@ -25,6 +25,7 @@ if nav
           != `&copy;&nbsp;${sinceYear} - ${currentYear} By ${config.author}`
         else
           != `&copy;&nbsp;${currentYear} By ${config.author}`
+    <a href="http://www.beian.miit.gov.cn/"  target="_blank">蜀ICP备2026037081号</a>
     if copyright.enable
       - const v = copyright.version ? getVersion() : false
       span.framework-info
@@ -35,5 +36,6 @@ if nav
         span.footer-separator |
         span= _p('footer.theme') + ' '
         a(href='https://github.com/jerryc127/hexo-theme-butterfly')= `Butterfly${ v ? ' ' + v.theme : '' }`
+        
   if theme.footer.custom_text
     .footer_custom_text!= theme.footer.custom_text
