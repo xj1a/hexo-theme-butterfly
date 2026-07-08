@@ -25,6 +25,7 @@ if nav
           != `&copy;&nbsp;${sinceYear} - ${currentYear} By ${config.author}`
         else
           != `&copy;&nbsp;${currentYear} By ${config.author}`
+    <br>
     a(href="http://www.beian.miit.gov.cn/" target="_blank") 蜀ICP备2026037081号
     if copyright.enable
       - const v = copyright.version ? getVersion() : false
